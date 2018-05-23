@@ -30,7 +30,7 @@ void joseph(int n, int k, int m){
 	head = createList(n);
 	pre = first = head;
 	while(k--){
-		pre = first;
+		pre = first; /* need backup the previous node in casethat m=1*/
 		first = first->next;
 	}
 	
